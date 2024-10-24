@@ -182,7 +182,7 @@ section {
         width: 100%;
     }
     nav ul li a {
-        font-size: 10px;
+        display: none;
     }
     nav ul li a img {
         height: 15px;
