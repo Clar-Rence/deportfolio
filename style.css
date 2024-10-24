@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    width: 90%;
+    margin: auto;
+    color: #ffffff;
+    max-width: 1200px;
+    position: relative;
+    background-color: #050505;
+}
+nav {
+    top: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    padding: 10px 15px;
+    align-items: center;
+    background-color: #050505;
+    justify-content: space-between;
+    border-bottom: 1px solid #202020;
+}
+nav .logo {
+    width: 45px;
+}
+nav ul {
+    gap: 10px;
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #121212;
+    background-color: #121212;
+    /* When the button is hovered */
+    &:hover {
+        background-color: #0a0a0a;
+    }
+}
+nav ul li a {
+    gap: 8px;
+    display: flex;
+    font-size: 15px;
+    color: #ffffff;
+    align-items: center;
+    text-decoration: none;
+}
+nav ul li a img {
+    height: 25px;
+}
+
+/* Section */
+section {
+    gap: 10px;
+    height: 100vh;
+    display: flex;
+    padding: 0 150px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Home */
+.profile {
+    gap: 64px;
+    display: flex;
+    align-items: center;
+}
+.profile img {
+    height: 200px;
+}
+.profile .text {
+    gap: 8px;
+    height: 100%;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile .text h3,
+.profile .text p {
+    color: #999999;
+    font-size: 20px;
+}
+.profile .text h1 {
+    font-size: 35px;
+}
+.profile .text button {
+    padding: 15px 30px;
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid #121212;
+    background-color: #121212;
+}
+.profile .text button a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* About */
+.skills {
+    gap: 15px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+#about p a {
+    color: green;
+}
+.skills a {
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid #121212;
+    background-color: #121212;
+}
+
+/* Contact */
+.contact form {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.contact form input,
+.contact form textarea {
+    border: none;
+    padding: 8px;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #121212;
+}
+
+.contact form input {
+    height: 35px;
+    border-radius: 5px;
+}
+.contact form textarea {
+    padding: 8px;
+    height: 150px;
+}
+.contact .social-media {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.contact .social-media a {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    color: #ffff;
+    border-radius: 5px;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #202020;
+    background-color: #0a0a0a;
+}
+.contact .social-media a i {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #202020;
+}
+
+/* Poor Responsive */
+@media (max-width: 800px) {
+    nav {
+        display: block;
+        padding: 10px 0;
+    }
+    nav .logo {
+        display: none;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav ul li a {
+        font-size: 12.5px;
+    }
+    nav ul li a img {
+        height: 20px;
+    }
+
+    /* Section */
+    section {
+        padding: 0;
+    }
+
+    /* Home */
+    .profile {
+        align-items: start;
+        flex-direction: column;
+    }
+    .profile img {
+        display: none;
+    }
+    .profile .text {
+        gap: 4px;
+    }
+    .profile .text h3,
+    .profile .text p {
+        font-size: 16.5px;
+    }
+    .profile .text button {
+        width: 100%;
+    }
+
+    /* About */
+    .skills a {
+
+    }
+}
